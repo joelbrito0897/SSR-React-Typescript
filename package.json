@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:server": "webpack --config webpack.config.server.js",
     "build:client": "webpack --config webpack.config.client.js",
-    "build:serve": "tsc --project ./tsconfig.server.json --outDir ./dist",
+    "build": "webpack --config webpack.config.client.js && webpack --config webpack.config.server.js",
     "start": "node ./dist/server.js"
   },
   "author": "Joel Brito",
