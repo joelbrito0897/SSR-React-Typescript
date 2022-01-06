@@ -25,6 +25,19 @@ module.exports = {
           configFile: "tsconfig.server.json",
         },
       },
+      {
+        test: /\.(png|jpe?g|gif|svg|ico)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'assets/[contenthash].[ext]',
+              esModule: false,
+              emitFile: false
+            },
+          },
+        ],
+      },
     ],
   },
   target: "node",

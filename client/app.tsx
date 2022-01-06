@@ -1,13 +1,9 @@
 import React from 'react';
 
-
-var info: string = '';
-
 function App() {
   return (
-    <>
-    
-        <p>Hello from Client</p>
+    <>    
+        <h1>Hello from Client</h1>
     </>    
   );
 }
